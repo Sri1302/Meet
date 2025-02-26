@@ -21,7 +21,7 @@ const server = http.createServer(app)
 //create socket.io instance
 const io = new Server(server,{
   cors:{
-    origin:"http://localhost:5173",//allow requests from this url
+    origin:"https://meet-frontend-ten.vercel.app/",//allow requests from this url
     methods:["POST","GET"]
   }
 }
