@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://meet-frontend-dun.vercel.app", // ✅ Remove trailing slash
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET","DELETE","PUT"],
     credentials: true, // ✅ Allow cookies, authentication headers
   })
 );
@@ -29,7 +29,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "https://meet-frontend-dun.vercel.app",
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET","PUT","DELETE"],
     credentials: true,
   },
   transports: ["websocket", "polling"], // ✅ Allow both WebSocket & polling
