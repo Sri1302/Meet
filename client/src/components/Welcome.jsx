@@ -21,7 +21,7 @@ export default function Welcome() {
             //reverse geocoding- conversion of cordinates to places
             async function getCity() {
               const res = await fetch(
-                `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=${1}&appid=0b788823b48545c417c01751b483f878`
+                `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=${1}&appid=0b788823b48545c417c01751b483f878`
               );
               const data = await res.json();
               console.log(data[0].name);
