@@ -50,6 +50,7 @@ export default function Welcome() {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({ userId }),
+            credentials:"include"
           });
           const data = await res.json();
           if (data && data.data) {
@@ -61,6 +62,7 @@ export default function Welcome() {
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ userId, userLocation }),
+                credentials:"include"
               }
             );
             const data = await updatedUser.json();
@@ -78,6 +80,7 @@ export default function Welcome() {
                 email:userEmail,
                 profilePic,
               }),
+              credentials:"include"
             });
             const data = await createUser.json();
             console.log(data);

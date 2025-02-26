@@ -21,7 +21,8 @@ export default function Users({location}){
                     headers:{
                         "Content-Type":"application/json"
                     },
-                    body:JSON.stringify({userLocation})
+                    body:JSON.stringify({userLocation}),
+                    credentials:"include"
                 })
                 const data = await res.json()
                 console.log(data.users)

@@ -14,7 +14,8 @@ export default function Broadcastmsgs({location}){
                 headers:{
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({location})
+                body:JSON.stringify({location}),
+                credentials:"include"
             })
             const data = await res.json()
             console.log(data.msgs)
@@ -29,7 +30,8 @@ export default function Broadcastmsgs({location}){
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify({id})
+            body:JSON.stringify({id}),
+            credentials:"include"
         })
         const data = await res.json()
         console.log(data)

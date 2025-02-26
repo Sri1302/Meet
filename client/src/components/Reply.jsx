@@ -17,7 +17,8 @@ export default function Reply() {
       headers:{
         "Content-Type":"application/json"
       },
-      body:JSON.stringify({id})
+      body:JSON.stringify({id}),
+      credentials:"include"
     })
     const data = await res.json()
     console.log(data)
@@ -35,6 +36,7 @@ export default function Reply() {
         room: message.message.room,
         message: input,
       }),
+      credentials:"include"
     });
 
     const data = await res.json()
@@ -50,7 +52,8 @@ export default function Reply() {
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify({room:message.message.room})
+            body:JSON.stringify({room:message.message.room}),
+            credentials:"include"
         })
         const data = await res.json()
         console.log(data)

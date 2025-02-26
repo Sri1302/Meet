@@ -18,7 +18,8 @@ export default function VeiwAndSendMsg(){
                 headers:{
                     "Content-Type":"Application/json"
                 },
-                body:JSON.stringify({room:message.message.message})
+                body:JSON.stringify({room:message.message.message}),
+                credentials:"include"
             })
             const data = await res.json()
             console.log(data)

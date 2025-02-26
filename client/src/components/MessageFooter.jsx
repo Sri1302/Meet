@@ -23,7 +23,8 @@ export default function MessageFooter({socket,message}){
                 headers:{
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({sender:user.fullName,message:cmessage,room:message.message.message})
+                body:JSON.stringify({sender:user.fullName,message:cmessage,room:message.message.message}),
+                credentials:"include"
             })
             const data = await res.json()
             console.log(data)
@@ -50,7 +51,8 @@ export default function MessageFooter({socket,message}){
                 headers:{
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({room})
+                body:JSON.stringify({room}),
+                credentials:"include"
             })
             const data = await res.json()
             console.log(data)
@@ -64,7 +66,8 @@ export default function MessageFooter({socket,message}){
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify({id})
+            body:JSON.stringify({id}),
+            credentials:"include"
         })
         const data= await res.json()
         console.log(data)

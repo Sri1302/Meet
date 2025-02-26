@@ -20,6 +20,7 @@ export default function MessageContainer({ location }) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ location }),
+          credentials:"include"
         }
       );
       const data = await res.json();
@@ -38,6 +39,7 @@ export default function MessageContainer({ location }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ id }),
+        credentials:"include"
       }
     );
     const data = await res.json();
@@ -56,6 +58,7 @@ export default function MessageContainer({ location }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, message, location }),
+        credentials:"include"
       }
     );
     const data = await res.json();
