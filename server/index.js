@@ -28,7 +28,7 @@ const server = http.createServer(app);
 // ✅ Fix Socket.IO CORS issue
 const io = new Server(server, {
   cors: {
-    origin: "https://meet-frontend-ten.vercel.app",
+    origin: "https://meet-frontend-dun.vercel.app",
     methods: ["POST", "GET"],
     credentials: true,
   },
