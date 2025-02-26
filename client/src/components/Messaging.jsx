@@ -6,7 +6,7 @@ import { useUser } from "@clerk/clerk-react"
 import io from 'socket.io-client'
 
 //establish a connection with the server
-const socket = io.connect('http://localhost:3000')
+const socket = io.connect('https://meet-backend-pink.vercel.app/')
 
 
 export default function Messaging(){

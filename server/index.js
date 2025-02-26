@@ -24,7 +24,8 @@ const io = new Server(server,{
     origin:"http://localhost:5173",//allow requests from this url
     methods:["POST","GET"]
   }
-})
+}
+)
 
 app.use('/api/users',userRoutes)
 app.use('/api/broadcastmsg',broadcastMsg)

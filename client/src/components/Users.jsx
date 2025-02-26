@@ -16,7 +16,7 @@ export default function Users({location}){
     useEffect(()=>{
         const getUsers = async ()=>{
             try{
-                const res = await fetch('http://localhost:3000/api/users/all',{
+                const res = await fetch('https://meet-backend-pink.vercel.app/api/users/all',{
                     method:"POST",
                     headers:{
                         "Content-Type":"application/json"

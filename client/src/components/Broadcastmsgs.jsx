@@ -9,7 +9,7 @@ export default function Broadcastmsgs({location}){
     const navigate = useNavigate()
     useEffect(()=>{
         const getAllMessages = async  ()=>{
-            const res= await fetch('http://localhost:3000/api/broadcastmsg/all',{
+            const res= await fetch('https://meet-backend-pink.vercel.app/api/broadcastmsg/all',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -24,7 +24,7 @@ export default function Broadcastmsgs({location}){
     },[])
 
     async function handleDelete(id){
-        const res = await fetch('http://localhost:3000/api/broadcastmsg/deleteMessage',{
+        const res = await fetch('https://meet-backend-pink.vercel.app/api/broadcastmsg/deleteMessage',{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json"

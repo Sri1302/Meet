@@ -18,7 +18,7 @@ export default function MessageFooter({socket,message}){
         socket.emit("send-message",messageObj)
         setDisplymsg((prev) => [...prev, messageObj]);
         async function sendDataToBackend(){
-            const res = await fetch('http://localhost:3000/api/message/createMessage',{
+            const res = await fetch('https://meet-backend-pink.vercel.app/api/message/createMessage',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -45,7 +45,7 @@ export default function MessageFooter({socket,message}){
 
     useEffect(()=>{
         async function getMessages(){
-            const res = await fetch('http://localhost:3000/api/message/getMessages',{
+            const res = await fetch('https://meet-backend-pink.vercel.app/api/message/getMessages',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -59,7 +59,7 @@ export default function MessageFooter({socket,message}){
         getMessages()
     },[])
     async function deleteMessage(id){
-        const res = await fetch('http://localhost:3000/api/message/deleteMessage',{
+        const res = await fetch('https://meet-backend-pink.vercel.app/message/deleteMessage',{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json"

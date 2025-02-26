@@ -13,7 +13,7 @@ export default function VeiwAndSendMsg(){
     useEffect(()=>{
        
         async function getMessages(){
-            const res = await fetch('http://localhost:3000/api/message/getMessages',{
+            const res = await fetch('https://meet-backend-pink.vercel.app/api/message/getMessages',{
                 method:"POST",
                 headers:{
                     "Content-Type":"Application/json"
