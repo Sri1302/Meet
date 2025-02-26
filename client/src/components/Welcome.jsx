@@ -44,7 +44,7 @@ export default function Welcome() {
     if (userLocation) {
       async function sendDataToBackend() {
         async function existingUser() {
-          const res = await fetch("https://meet-backend-pink.vercel.app/api/users/findUser", {
+          const res = await fetch("https://meet-backend-9uel.onrender.com/api/users/findUser", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export default function Welcome() {
           const data = await res.json();
           if (data && data.data) {
             const updatedUser = await fetch(
-              "https://meet-backend-pink.vercel.app/api/users/updateUser",
+              "https://meet-backend-9uel.onrender.com/api/users/updateUser",
               {
                 method: "PUT",
                 headers: {
@@ -68,7 +68,7 @@ export default function Welcome() {
             const data = await updatedUser.json();
             console.log(data);
           } else {
-            const createUser = await fetch("https://meet-backend-pink.vercel.app/api/users/", {
+            const createUser = await fetch("https://meet-backend-9uel.onrender.com/api/users/", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

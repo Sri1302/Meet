@@ -12,7 +12,7 @@ export default function Reply() {
   const message = location.state;
   
   async function handleDelete(id){
-    const res = await fetch('https://meet-backend-pink.vercel.app/api/message/deleteMessage',{
+    const res = await fetch('https://meet-backend-9uel.onrender.com/api/message/deleteMessage',{
       method:"DELETE",
       headers:{
         "Content-Type":"application/json"
@@ -28,7 +28,7 @@ export default function Reply() {
   }
 
   async function sendMessage() {
-    const res = await fetch("https://meet-backend-pink.vercel.app/api/message/createMessage", {
+    const res = await fetch("https://meet-backend-9uel.onrender.com/api/message/createMessage", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -47,7 +47,7 @@ export default function Reply() {
   }
   useEffect(()=>{
     async function getMessages(){
-        const res = await fetch('https://meet-backend-pink.vercel.app/api/message/getMessages',{
+        const res = await fetch('https://meet-backend-9uel.onrender.com/api/message/getMessages',{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

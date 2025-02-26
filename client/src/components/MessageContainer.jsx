@@ -13,7 +13,7 @@ export default function MessageContainer({ location }) {
   useEffect(() => {
     async function getAllMessages() {
       const res = await fetch(
-        "https://meet-backend-pink.vercel.app/api/broadcastmsg/all",
+        "https://meet-backend-9uel.onrender.com/api/broadcastmsg/all",
         {
           method: "POST",
           headers: {
@@ -32,7 +32,7 @@ export default function MessageContainer({ location }) {
 
   async function handleDelete(id) {
     const res = await fetch(
-      "https://meet-backend-pink.vercel.app/api/broadcastmsg/deleteMessage",
+      "https://meet-backend-9uel.onrender.com/api/broadcastmsg/deleteMessage",
       {
         method: "DELETE",
         headers: {
@@ -51,7 +51,7 @@ export default function MessageContainer({ location }) {
 
   async function handleClick() {
     const res = await fetch(
-      "https://meet-backend-pink.vercel.app/api/broadcastmsg/createMessage",
+      "https://meet-backend-9uel.onrender.com/api/broadcastmsg/createMessage",
       {
         method: "POST",
         headers: {

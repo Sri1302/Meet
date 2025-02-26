@@ -6,7 +6,7 @@ import { useUser } from "@clerk/clerk-react"
 import io from 'socket.io-client'
 
 //establish a connection with the server
-const socket = io.connect('https://meet-backend-pink.vercel.app/',{
+const socket = io.connect('https://meet-backend-9uel.onrender.com',{
     withCredentials:true
 })
 
