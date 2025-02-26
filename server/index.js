@@ -15,7 +15,7 @@ const app = express();
 // ✅ Fix CORS issue by allowing frontend & enabling credentials
 app.use(
   cors({
-    origin: "https://meet-frontend-dun.vercel.app/", // ✅ Remove trailing slash
+    origin: "https://meet-frontend-dun.vercel.app", // ✅ Remove trailing slash
     methods: ["POST", "GET"],
     credentials: true, // ✅ Allow cookies, authentication headers
   })
