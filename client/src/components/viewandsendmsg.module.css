@@ -1,0 +1,19 @@
+.container{
+    box-shadow: 3px 4px 5px rgba(0,0,0,0.4);
+    margin:24px;
+    padding: 14px;
+    border: 2px solid rgb(78, 69, 69);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.container p{
+    font-size: x-large;
+}
+
+.container button{
+    font-size: larger;
+    background-color: rgb(151, 125, 179);
+    border-radius: 4px;
+    border:none
+}

@@ -1,0 +1,9 @@
+
+
+body{
+    font-family:cursive;
+    background-color: rgba(255, 255, 255, 0.933);
+    /* background-image: url('./assests/meet.jpeg'); */
+    background-size:cover;
+    background-position: top;
+}

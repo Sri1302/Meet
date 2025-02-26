@@ -1,0 +1,19 @@
+.container{
+   margin:130px;
+   box-shadow: 4px 6px 5px rgba(0,0,0,0.4);
+   padding:12px;
+   border:2px solid rgb(49, 48, 48);
+   border-radius: 6px;
+}
+
+.header{
+    background-color: burlywood;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 6px;
+}
+
+.button{
+    text-align: center;
+  
+}

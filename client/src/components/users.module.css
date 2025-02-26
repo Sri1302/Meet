@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.4);
+    padding:10px;
+    border: 2px solid rgb(91, 91, 93);
+    border-radius: 6px;
+}
+
+.container button{
+    background-color: rgb(151, 125, 179);
+    border-radius: 4px;
+    cursor:pointer;
+    border:none;
+    font-size: large;
+}
+
