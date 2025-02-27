@@ -51,7 +51,10 @@ const updateUser = async (req,res)=>{
 const findUser = async (req,res)=>{
   const {userId} = req.body
   try{
-    const user = await User.find({userId})
+    const user = await User.findOne({userId})
+    if(!user){
+      return res.status(200).json({msg:"User not found",data:null})
+    }
     res.status(200).json({msg:"User Exits",data:user})
   }catch(e){
     res.status(400).json({error:e.message})
